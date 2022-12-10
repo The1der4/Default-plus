@@ -1,0 +1,209 @@
+#aHolder,
+.endAHolder,
+#merchImg,
+#onetrust-consent-sdk,
+#braveWarning,
+#newsHolder,
+#streamContainer,
+#newUserGuide,
+#krDiscountAd,
+#updateAd, 
+#editorBtnM,
+.verticalSeparator,
+.terms.standout,
+.verticalSeparatorInline,
+.terms,
+#termsInfo,
+.menuWindowSideL,
+.windowHeader,
+.menuSocialB,
+#menuBtnProfile,
+#menuBtnShop,
+#menuBtnChall,
+#menuBtnSocial, 
+#menuBtnMaps,
+#menuBtnMods,
+#menuBtnSettings,
+#mainLogo,
+#freeKRAd,
+#rankedBlog,
+#doubleXPAd,
+#seasonLabel,
+#menuClassNameTag,
+#doubleClassXPAd,
+.challHeadrI,
+.challRotImg,
+.challMapCvr,
+.setSugBox2,
+#hudClassIcon,
+#healthBar,
+.hpBSeg,
+.healthBarSeg,
+#challIcon,
+#ammoIcon,
+.weapKey,
+.weapIcon[style*="0.7"],
+#pingIcon,
+#timerIcon
+{
+    display : none !important;
+}
+
+.headerBarRight,
+.headerBarLeft,
+#mLevelCont,
+#chatInputHolder,
+#chatList,
+#customizeButton,
+#policeButton,
+#menuBtnHost,
+#menuBtnBrowser,
+#menuBtnRanked,
+#inviteButton,
+#menuBtnJoin,
+#menuItemContainer,
+#menuLvlHold,
+#battlepassAd,
+#voiceDisplay,
+#adventCal.youNewDiv,
+.hostHeader,
+.hostToggle,
+#stickyHostH,
+.selectorItem,
+#menuWindow.dark,
+.loadoutBtn,
+.classCard,
+.noBtnCard.blackShad,
+.winClose,
+.custBack,
+#itemSearchH,
+#itemSearch,
+#streakSel0_4,
+#streakSel1_1,
+#streakSel1_6,
+#streakSel2_0,
+#streakSel2_5,
+.streakActionOvrl,
+.streakCard.blackShad,
+.winSelH,
+.skinCard.blackShad,
+#selectorContainer,
+.xpBar,
+.pSt,
+.chalCard,
+.chalRews,
+.challCrdMsg,
+.instructionsHeader,
+.endCard,
+.tabHeader,
+#killCardHolder,
+#killCardMsg,
+#killCard,
+.setSugBox2,
+.setBodH,
+.setHed,
+.settingsHeader,
+.settingTab,
+.settingsBtn,
+.advancedSlider::after,
+.advancedSlider::before,
+.advancedSlider,
+#settSearch,
+span.slider::before,
+span.slider::after,
+.leftUIB,
+#timerDisplay,
+#streakCount,
+.countIcon,
+#killsIcon,
+#deathsIcon,
+#streakIcon,
+#kdIcon,
+#leaderDisplay,
+.instructionsHeader,
+#instructionsUpdate
+{
+    background-color: transparent;
+}
+
+#classPreviewCanvas
+{
+    opacity: 0;
+}
+
+#chatInput::placeholder
+{
+    color: transparent;
+}
+
+#chatInputHolder::before
+{
+    content: "";
+    position: absolute;
+    color: #fff;
+    bottom: 17px;
+    left: 70px;
+}
+
+#botRightHider
+{
+    display: flex !important;
+    flex-direction: row;
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+}
+
+#bottomRight,
+#weapDisplay
+{
+    position: unset;
+}
+
+#weapDisplay:not([style*=none])
+{
+    display: flex !important;
+}
+
+.weapItem
+{
+    margin-top: 0;
+    margin-right: -10px;
+    display: flex;
+}
+
+.weapIcon
+{
+    margin-right: 0 !important;
+    align-self: center;
+}
+
+.weapIcon[src*="melee"]
+{
+    margin-top: 10px;
+}
+
+#matchVoteHolder
+{
+    position: fixed;
+    top: 40%;
+    left: 95%;
+    transform: translate(-50%,-50%);
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.matchVote
+{
+    transform: scale(1.2);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.leaderNameM,
+.leaderNameM span::before,
+.leaderNameM span
+{
+    font-size: 0px;
+}
