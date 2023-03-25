@@ -1,3 +1,45 @@
+/* =========================================================================================== */
+/* @name               1der4                                                                   */
+/* @discord            https://discord.gg/eCCkKnEsDK                                           */
+/* @author             1der4#1716                                                              */
+/* @version            1.9.1                                                                   */
+/* @note               join discord to report bugs, give suggestions and get css update        */
+/* =========================================================================================== */
+
+/*
+1.	Bundle UI
+2.	Main UI
+3.	Profile UI
+4.	Market UI
+5.	Challenge UI
+6.	Spin UI
+7.	Esport UI
+8.	Map UI
+9.	Mod UI
+10.	Setting UI
+11.	Host Game UI
+12.	Server Browse UI
+13.	Customize UI
+14.	Ingame UI kill card + endcard + connection error + tdm score
+15.	Spec UI
+16.	Rank UI
+17.	Lost connection UI
+*/
+
+/*Menu UI*/
+
+*{
+    text-shadow:
+        1px 1px black,
+        -1px -1px black,
+        -1px 0px black,
+        0px -1px black,
+        1px 0px black,
+        0px 1px black;
+}
+
+/*Disable something useless*/
+
 #aHolder,
 .endAHolder,
 #merchImg,
@@ -24,6 +66,7 @@
 #menuBtnMaps,
 #menuBtnMods,
 #menuBtnSettings,
+#menuBtnEsports,
 #mainLogo,
 #freeKRAd,
 #rankedBlog,
@@ -31,20 +74,8 @@
 #seasonLabel,
 #menuClassNameTag,
 #doubleClassXPAd,
-.challHeadrI,
-.challRotImg,
-.challMapCvr,
-.setSugBox2,
-#hudClassIcon,
-#healthBar,
-.hpBSeg,
-.healthBarSeg,
-#challIcon,
-#ammoIcon,
-.weapKey,
-.weapIcon[style*="0.7"],
-#pingIcon,
-#timerIcon
+#mainLogoFace,
+#bpAdIcon
 {
     display : none !important;
 }
@@ -66,9 +97,60 @@
 #battlepassAd,
 #voiceDisplay,
 #adventCal.youNewDiv,
+#eventAd,
+#eventAdImg
+{
+    background-color: transparent;
+}
+
+#classPreviewCanvas
+{
+    opacity: 0;
+}
+
+.button { 
+    border: hidden !important;
+}
+
+/*Free Prize & Bundle*/
+
+.genericPromptBackground,
+.genericPromptSubTitle,
+.bundlCreatorText
+{
+    display:none;
+}
+
+#bundlePop {
+    background-color: transparent;
+}
+
+/*Host Game*/
+
 .hostHeader,
 .hostToggle,
-#stickyHostH,
+#stickyHostH
+{
+    background-color:transparent;
+}
+
+.serverHostOp,
+#hostCMapPickr
+{
+    background:transparent !important;
+}
+
+.mapListCat {
+    background-image: none;
+}
+
+.serverHostOpH
+{
+    display:none;
+}
+
+/*Customize*/
+
 .selectorItem,
 #menuWindow.dark,
 .loadoutBtn,
@@ -88,52 +170,52 @@
 .winSelH,
 .skinCard.blackShad,
 #selectorContainer,
-.xpBar,
-.pSt,
-.chalCard,
-.chalRews,
-.challCrdMsg,
-.instructionsHeader,
-.endCard,
-.tabHeader,
-#killCardHolder,
-#killCardMsg,
-#killCard,
-.setSugBox2,
-.setBodH,
-.setHed,
-.settingsHeader,
-.settingTab,
-.settingsBtn,
-.advancedSlider::after,
-.advancedSlider::before,
-.advancedSlider,
-#settSearch,
-span.slider::before,
-span.slider::after,
-.leftUIB,
-#timerDisplay,
-#streakCount,
-.countIcon,
-#killsIcon,
-#deathsIcon,
-#streakIcon,
-#kdIcon,
-#leaderDisplay,
-.instructionsHeader,
-#instructionsUpdate
+.skinCard
 {
     background-color: transparent;
 }
 
-#classPreviewCanvas
+/*shop*/
+
+#shopPremBen
 {
-    opacity: 0;
+    display:none;
 }
 
-#chatInput::placeholder
+.bigMenTabs {
+    background-color: transparent;
+}
+
+/*spin*/
+
+#spinButton,
+#spinInfo,
+#spinKR {
+    background-color: transparent;
+}
+
+.colCub {
+    display: none;
+}
+
+/*Profile*/
+
+.xpBar,
+.pSt,
+.button.buttonO.lgn
 {
-    color: transparent;
+    background-color: transparent;
+}
+
+/*Chatbox*/
+
+#chatList::-webkit-scrollbar {
+    display:none;
+}
+
+#chatInput
+{
+    background-color: transparent;
 }
 
 #chatInputHolder::before
@@ -145,65 +227,319 @@ span.slider::after,
     left: 70px;
 }
 
-#botRightHider
+/*Challenge*/
+
+.challHeadrI,
+.challRotImg,
+.challMapCvr,
+.chalImgC
 {
-    display: flex !important;
-    flex-direction: row;
-    bottom: 30px;
-    right: 30px;
-    position: fixed;
+    display: none;
 }
 
-#bottomRight,
-#weapDisplay
-{
-    position: unset;
+.challMapCrd {
+    background-image: none !important;
 }
 
-#weapDisplay:not([style*=none])
+.chalCard,
+.chalRews,
+.challCrdMsg
 {
-    display: flex !important;
+    background-color: transparent !important;
 }
 
-.weapItem
+/*Lost Connection*/
+
+.instructionsHeader,
+.instructionsTabs
 {
-    margin-top: 0;
-    margin-right: -10px;
-    display: flex;
+    background-color: transparent
 }
 
-.weapIcon
+.instructionsTabs *
 {
-    margin-right: 0 !important;
-    align-self: center;
+    background:transparent;
 }
 
-.weapIcon[src*="melee"]
-{
-    margin-top: 10px;
-}
+/*Endcard*/
 
-#matchVoteHolder
+.endCard,
+.tabHeader,
+#endTable,
+#teamTotal0,
+#teamTotal1,
+#returnHolder,
+.endSection
 {
-    position: fixed;
-    top: 40%;
-    left: 95%;
-    transform: translate(-50%,-50%);
-    border-radius: 0px;
     background-color: transparent;
 }
 
-.matchVote
+.gfSection,
+.endTitle,
+[src="./img/vic.png"],
+[src="./img/def.png"],
+[src="./img/dra.png"]
 {
-    transform: scale(1.2);
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
+    display:none !important;
+}
+
+.endCard *
+{
+    background: transparent !important;
+}
+
+#endlb_rank,
+#endlb_score,
+#endlb_kills,
+#endlb_deaths,
+#endlb_objective,
+#endlb_dmg,
+#endlb_reward,
+#endlb_deposits
+{
+    font-size: 0px;
+}
+
+#endlb_rank::after
+{
+    content: "";
+}
+
+#endlb_score::after
+{
+    content: "S";
+    font-size: 21px;
+}
+
+#endlb_kills::after
+{
+    content: "K";
+    font-size: 21px;
+}
+
+#endlb_deaths::after
+{
+    content: "D";
+    font-size: 21px;
+}
+
+#endlb_objective::after
+{
+    content: "obj";
+    font-size: 21px;
+}
+
+#endlb_dmg::after
+{
+    content: "dmg";
+    font-size: 21px;
+}
+
+#endlb_reward::after
+{
+    content: "kr";
+    font-size: 21px;
+}
+
+#endlb_deposits::after
+{
+    content: "dep";
+    font-size: 21px;
+}
+
+/*killcard*/
+
+#killCardHolder,
+#killCardMsg,
+#killCard
+{
+    background-color: transparent;
+}
+
+/*setting*/
+
+.setSugBox2,
+.setBodH,
+.setHed,
+.settingsHeader,
+.settingTab,
+.settingsBtn,
+.advancedSlider::after,
+.advancedSlider::before,
+.advancedSlider,
+#settSearch,
+span.slider::before,
+span.slider::after
+{
+    background-color: transparent;
+}
+
+.settingTab *
+{
+    background: transparent !important;
+}
+
+.setSugBox2
+{
+    display: none;
+}
+
+/*Health*/
+
+#hudClassIcon,
+#healthBar,
+.hpBSeg,
+.healthBarSeg,
+#challIcon,
+#maxHP
+{
+    display: none;
+}
+
+/*Ammo*/
+
+#ammoIcon,
+#ammoMax,
+#reloadMsg
+{
+    display: none !important;
+}
+
+/*Time FPS Ping*/
+
+#pingIcon,
+#timerIcon,
+#curGameInfo
+{
+    display: none;
+}
+
+.leftUIB,
+#timerDisplay,
+#matchVoteHolder
+{
+    background-color: transparent;
+}
+
+#fpsDisplay,
+#pingText
+{
+    color:white !important;
+}
+
+#ingameFPS
+{
+    visibility:visible;
+    color:white !important;
+}
+
+#pingText:after
+{
+    content:' ms';
+}
+
+/*KD&Streak*/
+
+#streakCount,
+.countIcon,
+#killsIcon,
+#deathsIcon,
+#streakIcon,
+#kdIcon
+{
+    background-color: transparent;
+}
+
+/*Kill Feed*/
+
+.kfItem
+{
+	background-color: transparent;
+}
+
+/*networklag*/
+#networkLag {
+    background-color: transparent;
+}
+
+#networkLag>div {
+    color:transparent;
+}
+
+#networkLagHed {
+    color: white!important
+}
+    
+/*Lost Connection*/
+
+.instructionsHeader,
+#instructionsUpdate
+{
+    background-color: transparent;
+}
+
+/*Rank*/
+
+#compClassPHolder,
+#compBtnLst,
+#compT1Scr,
+#compT2Scr
+{
+    background-color:transparent;
+}
+
+#cmpDatBox,
+#cmpLeavInfo,
+#compTimBox
+{
+    display:none;
+}
+
+.compClassPItm
+{
+    background-color:transparent;
+    border-color:transparent;
+}
+
+.compTScrB,
+.compSwpTmB,
+.compMenBtnS
+{
+    background:none !important;
+}
+
+/*Tdm score*/
+
+#teamScores {
+    background-color: transparent;
+}
+
+/*Spectate*/
+
+#specTimer,
+#specStats,
+#specContr,
+#specNames
+{
+    background-color:transparent;
+}
+
+/*Leaderboard*/
+
+#leaderDisplay
+{
+    background-color: transparent;
 }
 
 .leaderNameM,
-.leaderNameM span::before,
+.leaderNameM::before,
 .leaderNameM span
 {
     font-size: 0px;
+}
+
+.leaderNameM::after
+{
+    content: "1der4";
+    font-size: 18px;
 }
