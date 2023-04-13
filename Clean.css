@@ -1,34 +1,36 @@
-/* =========================================================================================== */
-/* @name               1der4                                                                   */
-/* @discord            https://discord.gg/eCCkKnEsDK                                           */
-/* @author             1der4#1716                                                              */
-/* @version            1.9.1                                                                   */
-/* @note               join discord to report bugs, give suggestions and get css update        */
-/* =========================================================================================== */
-
 /*
-1.	Bundle UI
-2.	Main UI
-3.	Profile UI
-4.	Market UI
-5.	Challenge UI
-6.	Spin UI
-7.	Esport UI
-8.	Map UI
-9.	Mod UI
-10.	Setting UI
-11.	Host Game UI
-12.	Server Browse UI
-13.	Customize UI
-14.	Ingame UI kill card + endcard + connection error + tdm score
-15.	Spec UI
-16.	Rank UI
-17.	Lost connection UI
+===========================================================================================
+@name               Default+ css
+@discord            https://discord.gg/eCCkKnEsDK
+@author             1der4#1716
+@version            1.11.3
+@authorize client   RAYS
+@note1              join discord to report bugs, give suggestions and get css update
+@note2              DO NOT STEAL CODE, AND CLAIM THIS CSS IS WRITTEN BY YOU.
+===========================================================================================
+
+============================ Menu UI ============================
+1.Main UI     2.LoadingScreen 3.Profile           4.Shop              
+5.Challenge   6.Esport        7.Map               8.Mod
+9.Setting     10.HostGame     11.Customize        12.Spectate
+13.Chatbox
+=========================== Ingame UI ===========================
+14.Health     15.Ammo         16.TopLeft          17.Leaderboard
+18.KillFeed   19.KD Streak    20.Krank/StreakItem 21.Teamscore 
+22.Killcard   23.Endcard
+========================= Miscellaneous =========================
+24.Connection 25.Rank         26.FreePrize/Bundle 27.parkour 
+28.trade
 */
 
-/*Menu UI*/
+:root
+{
+    --color1:pink;
+    --color2:white;
+}
 
-*{
+* , a , td , th
+{
     text-shadow:
         1px 1px black,
         -1px -1px black,
@@ -36,401 +38,448 @@
         0px -1px black,
         1px 0px black,
         0px 1px black;
+    color:var(--color1) !important;
 }
 
-/*Disable something useless*/
-
-#aHolder,
-.endAHolder,
-#merchImg,
-#onetrust-consent-sdk,
-#braveWarning,
-#newsHolder,
-#streamContainer,
-#newUserGuide,
-#krDiscountAd,
-#updateAd, 
-#editorBtnM,
-.verticalSeparator,
-.terms.standout,
-.verticalSeparatorInline,
-.terms,
-#termsInfo,
-.menuWindowSideL,
-.windowHeader,
-.menuSocialB,
-#menuBtnProfile,
-#menuBtnShop,
-#menuBtnChall,
-#menuBtnSocial, 
-#menuBtnMaps,
-#menuBtnMods,
-#menuBtnSettings,
-#menuBtnEsports,
-#mainLogo,
-#freeKRAd,
-#rankedBlog,
-#doubleXPAd,
-#seasonLabel,
-#menuClassNameTag,
-#doubleClassXPAd,
-#mainLogoFace,
-#bpAdIcon
+div
 {
-    display : none !important;
+    border:none !important;
 }
 
-.headerBarRight,
-.headerBarLeft,
-#mLevelCont,
-#chatInputHolder,
-#chatList,
-#customizeButton,
-#policeButton,
-#menuBtnHost,
-#menuBtnBrowser,
-#menuBtnRanked,
-#inviteButton,
-#menuBtnJoin,
-#menuItemContainer,
-#menuLvlHold,
-#battlepassAd,
-#voiceDisplay,
-#adventCal.youNewDiv,
-#eventAd,
-#eventAdImg
+th
 {
-    background-color: transparent;
+    border-bottom: none;
 }
 
-#classPreviewCanvas
+select
 {
-    opacity: 0;
+    background-color:transparent !important;
 }
 
-.button { 
-    border: hidden !important;
+/*Main UI*/
+
+#aHolder,.endAHolder,#merchImg,#onetrust-consent-sdk,#braveWarning,#newsHolder,#streamContainer,
+#krDiscountAd,#editorBtnM,.verticalSeparator,.verticalSeparatorInline,.terms,#termsInfo,
+.menuSocialB,.menuItemTitle,#mainLogo,#mainLogoFace,#freeKRAd,#seasonLabel,#menuClassNameTag,
+#bpAdIcon,.purejscarousel-slides-container,#menuWindow::-webkit-scrollbar,
+#menuClassIcn,#homeStoreAd,.adIcon,#updateAd,#menuLvlHold,#newUserGuide
+/*.terms.standout,.windowHeader,#doubleXPAd,#doubleClassXPAd*/
+{
+    display:none !important;
 }
 
-/*Free Prize & Bundle*/
+.headerBarRight,.headerBarLeft,#mLevelCont,#customizeButton,
+#menuItemContainer,#eventAd,.serverHeader,
+#policePopC,#trustProg,#trustPrgHD,.dropsPopHeader,.viewDrops,
+.dropCard,#battlepassAd
+/*#eventAdImg*/
+{
+    background-color:transparent !important;
+}
 
-.genericPromptBackground,
-.genericPromptSubTitle,
-.bundlCreatorText
+#twitchDropsAd,#policeButton
+{
+    border:none!important;
+}
+
+.button,.dropsSliderBtn,#genericPop
+{ 
+    border:none !important;
+    background-color:transparent !important;
+}
+
+#mapInfoHld{
+    border-bottom: none;
+    font-size:0px;
+    text-align:center;
+}
+
+#mapInfo{
+    font-size: 20px;
+}
+
+#menuWindow.dark {
+    background-color:transparent !important;
+    box-shadow: none;
+}
+
+/*LoadingScreen*/
+
+#loadEditrBtn,#loadInfoLHolder,#loadGamNm,.lC-cube,.lds-ring
 {
     display:none;
 }
 
-#bundlePop {
-    background-color: transparent;
+#loadTipsHolder,#loadInfoRHolder
+{
+    font-size:0px;
 }
 
-/*Host Game*/
+#loadTipsHolder::after
+{
+    content:"You are now using 1der4's Default+ css";
+    font-size:27px;
+}
 
-.hostHeader,
-.hostToggle,
-#stickyHostH
+#loadInfoRHolder::before
+{
+    content:"Join Discord discord.gg/eCCkKnEsDK to get css update";
+    font-size:55px;
+    color:red;
+}
+
+#initLoader
 {
     background-color:transparent;
+    background:url("https://github.com/The1der4/Default-plus/blob/main/illust_98032318_20220502_234605.jpg?raw=true") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.serverHostOp,
-#hostCMapPickr
+/*Profile*/
+
+.pSt,.setHedS,.setHed,#profilePicM,.folPfp,.smlInput
+/*.button.buttonO.lgn,#crtrEmail*/
+{
+    background-color:transparent !important;
+    border:none;
+}
+
+.xpBar,.clsStatImg,.clsStatXPBar,.clsStatCard,.updDisN,
+.subPassChg,#referralHeader,.accountInput
+{
+    background-color:transparent !important;
+}
+
+.xpBarB
+{
+    background-image:none !important;
+}
+
+.material-icons,.menuLink{
+    color:var(--color1) !important;
+}
+
+.settName,.settNameSmall {
+    border-bottom:none;
+}
+
+.pfpAction{
+    background:transparent;
+}
+
+/*Shop*/
+
+#shopPremBen,.colCub,#crftHeaderImg,.shopActionSep,
+.shopImg,[src="./img/preview_0.png"],.shopGradBG,.shopImgGrad
+{
+    display:none !important;
+}
+
+#spinButton,#spinInfo,#spinKR,.bigMenTabs,
+.redVouchBtn,.purchKRInfoH,.spinVal,.creatorCodeBtn,.shopSale
+/*#creatorCodeI*/
+{
+    background-color:transparent !important;
+}
+
+.crftRcpeCrd,.craftRcIcn,.crftTim,.bundleCrd,.bundleItmBtn,#shopJnkDsp
 {
     background:transparent !important;
 }
 
-.mapListCat {
-    background-image: none;
+.bundleIcn
+{
+    background-image:none !important;
+    background:transparent;
 }
 
-.serverHostOpH
+#shopMainSellB,#shopSideSellB,.bundleSliderBtn,.shopCard
+{
+    border:none !important;
+    background:transparent !important;
+}
+
+.bundleItmNm{
+    font-size:0px;
+}
+
+.bundleItmNm::after{
+    font-size:25px;
+    content:"Discord Nitro Are Better";
+}
+
+/*Challenge*/
+
+.challHeadrI,.challRotImg,.challMapCvr,.chalImgC
+{
+    display:none;
+}
+
+.challMapCrd,.chalXPBarC
+{
+    background-image:none !important;
+}
+
+.chalCard,.chalRews,.challCrdMsg,.chalXPBar
+{
+    background-color:transparent !important;
+}
+
+.chalCard{
+    box-shadow:none !important;
+}
+
+/*Esport*/
+
+.scrimDesc{
+    font-size:0px;
+}
+
+.scrimLink{
+    font-size:13px;
+}
+
+.scrimImage{
+    background:transparent !important;
+    box-shadow:none;
+}
+
+.scrimSub{
+    display:none;
+}
+
+/*Map*/
+
+.bigMFeatHold,.biMFeatInfB,.mapListItem,.mapsVotes,
+#bigMFeatHBtn,#bigMFeatPBtn,#mapAgeD
+{
+    background-color:transparent !important;
+}
+
+.biMFeatInfH,#bigMFeatDesc
+{
+    display:none;
+}
+
+.searchBtn
+{
+    background:transparent !important;
+}
+
+.mapAgeD
+{
+    background-image:none !important;
+}
+
+/*Mod*/
+
+.bigMFeatHold{
+    background-image:none !important;
+}
+
+/*Setting*/
+
+.setSugBox2,.setBodH,.setHed,.settingsHeader,
+.settingTab,.settingsBtn,.advancedSlider::after,
+.advancedSlider::before,.advancedSlider,#settSearch,
+span.slider::before,span.slider::after,.settingsBtn *,
+#slid_input_lagComp
+{
+    background-color:transparent !important;
+}
+
+.settingTab:hover {
+    border-bottom: none;
+}
+
+.setSugBox2,.material-icons.plusOrMinus
+{
+    display:none;
+}
+
+/*Host Game*/
+
+.hostHeader,.hostToggle,#stickyHostH,#mpSrch
+{
+    background-color:transparent;
+}
+
+.serverHostOp,#hostCMapPickr
+{
+    background:transparent !important;
+    border:none;
+}
+
+.mapListCat
+{
+    background-image:none;
+}
+
+.serverHostOpH,#playerCnt,#editorCnt,#socialCnt
 {
     display:none;
 }
 
 /*Customize*/
 
-.selectorItem,
-#menuWindow.dark,
-.loadoutBtn,
-.classCard,
-.noBtnCard.blackShad,
-.winClose,
-.custBack,
-#itemSearchH,
-#itemSearch,
-#streakSel0_4,
-#streakSel1_1,
-#streakSel1_6,
-#streakSel2_0,
-#streakSel2_5,
-.streakActionOvrl,
-.streakCard.blackShad,
-.winSelH,
-.skinCard.blackShad,
-#selectorContainer,
-.skinCard
+.selectorItem,.loadoutBtn,.classCard,
+.noBtnCard.blackShad,.winClose,.custBack,#itemSearchH,
+#itemSearch,#streakSel0_4,#streakSel1_1,#streakSel1_6,
+#streakSel2_0,#streakSel2_5,.streakActionOvrl,
+.streakCard.blackShad,.winSelH,.skinCard.blackShad,
+#selectorContainer,.skinCard,#loadoutName,#loadoutSelect,
+.inputGrey2,.custContainer,.custSubContainer,.clsXPBarC,
+.classXPBar,.custClear
 {
-    background-color: transparent;
+    background-color:transparent !important;
 }
 
-/*shop*/
+#classPreviewCanvas
+{
+    opacity:0;
+}
 
-#shopPremBen
+.custContainer,.custSubContainer,.selectorItem
+{
+    border:none !important;
+}
+
+.clsXPBarC{
+    color:transparent !important;
+}
+
+/*Spectate*/
+
+#specTimer,#specStats,#specContr,#specNames,
+#specScoreTm0,#specScoreTm1
+{
+    background-color:transparent;
+    border:none;
+}
+
+.sliderSml::before,#specNameTm0,#specNameTm1,#specGameInfo
 {
     display:none;
 }
 
-.bigMenTabs {
-    background-color: transparent;
-}
-
-/*spin*/
-
-#spinButton,
-#spinInfo,
-#spinKR {
-    background-color: transparent;
-}
-
-.colCub {
-    display: none;
-}
-
-/*Profile*/
-
-.xpBar,
-.pSt,
-.button.buttonO.lgn
+#specMapOverlay
 {
-    background-color: transparent;
+    left:20px;
+    top:140px;
+    background-color:transparent;
+    visibility:visible !important;
+}
+
+#plySearch,.punishButton,.spectPIcon,.specLevelBox,
+#spectHPBI,#spectHPB
+{
+    background-color:transparent !important;
+}
+
+.sliderSml{
+    width: 40px;
+    height: 20px;
+}
+
+#uiBase.onSpect #topRight{
+    display:none !important;
+}
+
+#specScoreTm0,#specScoreTm1,#specTimer {
+    font-size: 35px;
 }
 
 /*Chatbox*/
 
-#chatList::-webkit-scrollbar {
+#chatList::-webkit-scrollbar
+{
     display:none;
 }
 
-#chatInput
+#chatList
 {
-    background-color: transparent;
+    background-color:transparent;
 }
 
 #chatInputHolder::before
 {
-    content: "";
-    position: absolute;
-    color: #fff;
-    bottom: 17px;
-    left: 70px;
+    content:"";
+    position:absolute;
+    bottom:17px;
+    left:70px;
 }
 
-/*Challenge*/
-
-.challHeadrI,
-.challRotImg,
-.challMapCvr,
-.chalImgC
-{
-    display: none;
+#chatInput::placeholder{
+    color: transparent;
+    text-shadow:none;
 }
 
-.challMapCrd {
-    background-image: none !important;
+#chatInputHolder,#voiceDisplay,#chatInput{
+    border:none;
+    background-color:transparent;
 }
 
-.chalCard,
-.chalRews,
-.challCrdMsg
-{
-    background-color: transparent !important;
+#uiBase.onDeathScrn #chatHolder,
+#uiBase.onDeathScrn #voiceDisplay{
+    animation:none;
 }
 
-/*Lost Connection*/
 
-.instructionsHeader,
-.instructionsTabs
-{
-    background-color: transparent
-}
-
-.instructionsTabs *
-{
-    background:transparent;
-}
-
-/*Endcard*/
-
-.endCard,
-.tabHeader,
-#endTable,
-#teamTotal0,
-#teamTotal1,
-#returnHolder,
-.endSection
-{
-    background-color: transparent;
-}
-
-.gfSection,
-.endTitle,
-[src="./img/vic.png"],
-[src="./img/def.png"],
-[src="./img/dra.png"]
-{
-    display:none !important;
-}
-
-.endCard *
-{
-    background: transparent !important;
-}
-
-#endlb_rank,
-#endlb_score,
-#endlb_kills,
-#endlb_deaths,
-#endlb_objective,
-#endlb_dmg,
-#endlb_reward,
-#endlb_deposits
-{
-    font-size: 0px;
-}
-
-#endlb_rank::after
-{
-    content: "";
-}
-
-#endlb_score::after
-{
-    content: "S";
-    font-size: 21px;
-}
-
-#endlb_kills::after
-{
-    content: "K";
-    font-size: 21px;
-}
-
-#endlb_deaths::after
-{
-    content: "D";
-    font-size: 21px;
-}
-
-#endlb_objective::after
-{
-    content: "obj";
-    font-size: 21px;
-}
-
-#endlb_dmg::after
-{
-    content: "dmg";
-    font-size: 21px;
-}
-
-#endlb_reward::after
-{
-    content: "kr";
-    font-size: 21px;
-}
-
-#endlb_deposits::after
-{
-    content: "dep";
-    font-size: 21px;
-}
-
-/*killcard*/
-
-#killCardHolder,
-#killCardMsg,
-#killCard
-{
-    background-color: transparent;
-}
-
-/*setting*/
-
-.setSugBox2,
-.setBodH,
-.setHed,
-.settingsHeader,
-.settingTab,
-.settingsBtn,
-.advancedSlider::after,
-.advancedSlider::before,
-.advancedSlider,
-#settSearch,
-span.slider::before,
-span.slider::after
-{
-    background-color: transparent;
-}
-
-.settingTab *
-{
-    background: transparent !important;
-}
-
-.setSugBox2
-{
-    display: none;
-}
+/*=== Ingame UI ===*/
 
 /*Health*/
 
-#hudClassIcon,
-#healthBar,
-.hpBSeg,
-.healthBarSeg,
-#challIcon,
-#maxHP
+#hudClassIcon,#healthBar,.hpBSeg,.healthBarSeg,
+#challIcon,#maxHP
 {
-    display: none;
+    display:none;
+}
+
+#healthValueHolder
+{
+    background-color:transparent;
+}
+
+#healthValue
+{
+    font-size:35px;
 }
 
 /*Ammo*/
 
-#ammoIcon,
-#ammoMax,
-#reloadMsg
+#ammoIcon,#ammoMax,#reloadMsg,.weapKey
 {
-    display: none !important;
+    display:none !important;
 }
 
-/*Time FPS Ping*/
-
-#pingIcon,
-#timerIcon,
-#curGameInfo
+#ammoDisplay
 {
-    display: none;
+    background-color:transparent !important;
 }
 
-.leftUIB,
-#timerDisplay,
-#matchVoteHolder
+/*TopLeft*/
+
+#pingIcon,#timerIcon,#curGameInfo
 {
-    background-color: transparent;
+    display:none;
 }
 
-#fpsDisplay,
-#pingText
+.leftUIB,#timerDisplay,#matchVoteHolder
 {
-    color:white !important;
+    background-color:transparent;
+}
+
+#fpsDisplay,#pingText,#ingameFPS
+{
+    color:var(--pink) !important;
 }
 
 #ingameFPS
 {
     visibility:visible;
-    color:white !important;
 }
 
 #pingText:after
@@ -438,59 +487,279 @@ span.slider::after
     content:' ms';
 }
 
-/*KD&Streak*/
+/*Leaderboard*/
 
-#streakCount,
-.countIcon,
-#killsIcon,
-#deathsIcon,
-#streakIcon,
-#kdIcon
+.newLeaderNameM,.newLeaderNameM::before,.newLeaderNameM span
 {
-    background-color: transparent;
+    font-size:0px;
+}
+
+.newLeaderNameM::after
+{
+    content:"1der4";
+    font-size:15px;
+}
+
+#newLeaderDisplay
+{
+    top:10px;
+    left:unset;
+    right:20px;
+    transform: unset;
+    display:block !important;
+}
+
+.newLeaderContainer,.newLeaderTeam,#leaderDisplay
+{
+    background-color:transparent !important;
+}
+
+.newLeaderCounter,#leaderContainer
+{
+    display:none;
+}
+
+td>.newLeaderItem
+{
+    max-width: 300px;
+    min-width: 200px;
 }
 
 /*Kill Feed*/
 
 .kfItem
 {
-	background-color: transparent;
+    background-color:transparent;
 }
 
-/*networklag*/
-#networkLag {
-    background-color: transparent;
-}
-
-#networkLag>div {
-    color:transparent;
-}
-
-#networkLagHed {
-    color: white!important
-}
-    
-/*Lost Connection*/
-
-.instructionsHeader,
-#instructionsUpdate
+#killFeed
 {
-    background-color: transparent;
+    right:1%;
+    top:450px;
 }
 
-/*Rank*/
+/*KD Streak*/
 
-#compClassPHolder,
-#compBtnLst,
-#compT1Scr,
-#compT2Scr
+#streakCount,.countIcon
 {
     background-color:transparent;
 }
 
-#cmpDatBox,
-#cmpLeavInfo,
-#compTimBox
+#topRight
+{
+    top:400px;
+    padding: 0;
+    margin: 0;
+    width:auto;
+    text-align:center;
+}
+
+#killsIcon,#deathsIcon,#streakIcon,#kdIcon
+{
+    display:none;
+}
+
+#killsVal::before
+{
+    content:"Kills ";
+    color:var(--color2);
+}
+
+#deathsVal::before
+{
+    content:"Deaths ";
+    color:var(--color2);
+}
+
+#streakVal::before
+{
+    content:"Streaks ";
+    color:var(--color2);
+}
+
+#kdVal::before
+{
+    content:"KD ";
+    color:var(--color2);
+}
+
+#myScoreVal::before
+{
+    content:"Score ";
+    color:var(--color2);
+}
+
+/*Krank/StreakItem*/
+
+.killStreakCnt,#killStreakHolder,.killStreakItem
+{
+    background-color:none !important;
+}
+
+/*Teamscore*/
+
+#teamScores
+{
+    background-color:transparent;
+}
+
+/*Killcard*/
+
+
+.death-ui-bottom,.death-ui-bottom-empty
+{
+    background:transparent;
+    /*backdrop-filter:none;*/
+    animation:none;
+}
+
+
+.death-row-weapon-text,.death-row-bottom-bg,.death-row-class,
+.death-row-right,.death-row-left,.death-row-center,.death-row-bottom,.death-column{
+    display:none
+}
+
+.death-row-user-text,.death-row-user-stat,.death-row-kills,
+.death-stats-row,.death-row-center,.death-row-center-bottom,
+.death-row-center-self,.death-stats-row{
+    filter:none;
+}
+
+.death-stats {
+    position:flexed;
+    justify-content: end;
+    row-gap:10px;
+    right: 5%;
+}
+
+/*Endcard*/
+
+.endCard,.tabHeader,#endTable,#teamTotal0,
+#teamTotal1,#returnHolder,.endSection
+{
+    background-color:transparent;
+}
+
+.gfSection,.endTitle,
+[src="./img/vic.png"],[src="./img/def.png"],[src="./img/dra.png"]
+{
+    display:none !important;
+}
+
+.endCard *
+{
+    background:transparent !important;
+}
+
+.matchVote,#doubleXPHolder
+{
+    background:transparent;
+    border:none !important;
+}
+
+.matchVoteThumb{
+    display:none;
+}
+
+#endlb_rank,#endlb_score,#endlb_kills,#endlb_deaths,
+#endlb_objective,#endlb_dmg,#endlb_reward,#endlb_deposits
+{
+    font-size:0px;
+}
+
+#endlb_rank::after
+{
+    content:"";
+}
+
+#endlb_score::after
+{
+    content:"S";
+    font-size: 21px;
+}
+
+#endlb_kills::after
+{
+    content:"K";
+    font-size: 21px;
+}
+
+#endlb_deaths::after
+{
+    content:"D";
+    font-size:21px;
+}
+
+#endlb_objective::after
+{
+    content:"OBJ";
+    font-size:21px;
+}
+
+#endlb_dmg::after
+{
+    content:"DMG";
+    font-size:21px;
+}
+
+#endlb_reward::after
+{
+    content:"KR";
+    font-size:21px;
+}
+
+#endlb_deposits::after
+{
+    content:"DEP";
+    font-size:21px;
+}
+
+/*=== Miscellaneous ===*/
+/*Connection*/
+
+#networkLag>div
+{
+    color:transparent;
+}
+
+#networkLagHed
+{
+    color:var(--color2) !important;
+}
+
+#networkLag,.reportDC
+{
+    background-color:transparent !important;
+}
+
+#instructionsUpdate{
+    box-shadow:none;
+    background-color:transparent;
+}
+
+.instructionsTab{
+    border-top:none;
+}
+
+.instructionsHeader{
+    border-bottom:none;
+    box-shadow:none;
+    background-color:transparent;
+}
+
+.instructionsTabs{
+    box-shadow:none;
+    background-color:transparent;
+}
+
+/*Rank*/
+
+#compClassPHolder,#compBtnLst,#compT1Scr,#compT2Scr
+{
+    background-color:transparent;
+}
+
+#cmpDatBox,#cmpLeavInfo,#compTimBox
 {
     display:none;
 }
@@ -501,45 +770,75 @@ span.slider::after
     border-color:transparent;
 }
 
-.compTScrB,
-.compSwpTmB,
-.compMenBtnS
+.compTScrB,.compSwpTmB,.compMenBtnS
 {
     background:none !important;
 }
 
-/*Tdm score*/
+/*FreePrize/Bundle*/
 
-#teamScores {
+.genericPromptBackground,.genericPromptSubTitle,.bundlCreatorText,
+.bundlPopImg,#acpImg
+{
+    display:none;
+}
+
+.bundlPopBuyB,.bundlPopCurncs,#bundlCreatorCode,#bundlCreatorCodeBtn,
+#bundlePop,.bundlPopSidH,.bundlCreatorH,.button.buttonCL.buttonP
+{
+    background-color:transparent !important;
+}
+
+.claimPop,.bundlPopBuyC,.bundlPopBuyS
+{
+    background:transparent !important;
+}
+
+.bundlPopNam,.bundlPopInfo{
+    font-size:0px;
+}
+
+.bundlPopNam::after
+{
+    content:"Get Real";
+    font-size:36px;
+}
+
+.bundlPopInfo::after
+{
+    content:"You don't have money";
+    font-size:28px;
+}
+
+.genericprompt,.prompt-content
+{
+    background-color:transparent !important;
+    box-shadow:none !important;
+}
+
+/*Parkour*/
+
+#speedRunBox,.sriAct,#speedRunReset
+{
     background-color: transparent;
 }
 
-/*Spectate*/
+/*Trade*/
 
-#specTimer,
-#specStats,
-#specContr,
-#specNames
+#tradeChatInput,.tListN.inv,.tSearch,
+#tHeader0,#tHeader1,.tSubCheck,.tDecCheck
 {
-    background-color:transparent;
+    background-color:transparent !important;
 }
 
-/*Leaderboard*/
-
-#leaderDisplay
+#tradeTotal0,#tradeTotal1
 {
-    background-color: transparent;
+    color:var(--color2);
 }
 
-.leaderNameM,
-.leaderNameM::before,
-.leaderNameM span
+#invList0::-webkit-scrollbar,#invList1::-webkit-scrollbar,
+#tradeList0::-webkit-scrollbar,#tradeList1::-webkit-scrollbar,
+.tItem
 {
-    font-size: 0px;
-}
-
-.leaderNameM::after
-{
-    content: "1der4";
-    font-size: 18px;
+    display:none;
 }
