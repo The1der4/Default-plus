@@ -3,7 +3,7 @@
 @name               Default+ css
 @discord            https://discord.gg/eCCkKnEsDK
 @author             1der4#1716
-@version            1.11.3
+@version            1.11.4
 @authorize client   RAYS
 @note1              join discord to report bugs, give suggestions and get css update
 @note2              DO NOT STEAL CODE, AND CLAIM THIS CSS IS WRITTEN BY YOU.
@@ -22,6 +22,8 @@
 24.Connection 25.Rank         26.FreePrize/Bundle 27.parkour 
 28.trade
 */
+
+/*Menu UI*/
 
 :root
 {
@@ -58,21 +60,25 @@ select
 
 /*Main UI*/
 
-#aHolder,.endAHolder,#merchImg,#onetrust-consent-sdk,#braveWarning,#newsHolder,#streamContainer,
-#krDiscountAd,#editorBtnM,.verticalSeparator,.verticalSeparatorInline,.terms,#termsInfo,
-.menuSocialB,.menuItemTitle,#mainLogo,#mainLogoFace,#freeKRAd,#seasonLabel,#menuClassNameTag,
-#bpAdIcon,.purejscarousel-slides-container,#menuWindow::-webkit-scrollbar,
-#menuClassIcn,#homeStoreAd,.adIcon,#updateAd,#menuLvlHold,#newUserGuide
-/*.terms.standout,.windowHeader,#doubleXPAd,#doubleClassXPAd*/
+#aHolder,.endAHolder,#merchImg,#onetrust-consent-sdk,#braveWarning,
+#newsHolder,#streamContainer,#newUserGuide,#krDiscountAd,#updateAd,
+#editorBtnM,.verticalSeparator,.terms.standout,
+.verticalSeparatorInline,.terms,#termsInfo,.menuWindowSideL,
+.windowHeader,.menuSocialB,.menuItemTitle,#mainLogo,#freeKRAd,
+#rankedBlog,#doubleXPAd,#seasonLabel,#menuClassNameTag,
+#doubleClassXPAd,#mainLogoFace,#bpAdIcon,
+.purejscarousel-slides-container,#playerCnt,#editorCnt,#socialCnt,
+#menuWindow::-webkit-scrollbar,#menuClassIcn,#homeStoreAd,.adIcon,
+#menuLvlHold
 {
     display:none !important;
 }
 
-.headerBarRight,.headerBarLeft,#mLevelCont,#customizeButton,
-#menuItemContainer,#eventAd,.serverHeader,
-#policePopC,#trustProg,#trustPrgHD,.dropsPopHeader,.viewDrops,
-.dropCard,#battlepassAd
-/*#eventAdImg*/
+.headerBarRight,.headerBarLeft,#mLevelCont,
+#menuItemContainer,#battlepassAd,#adventCal.youNewDiv,#eventAd,
+#eventAdImg,.serverHeader,#policePopC,#trustProg,#trustPrgHD,
+#twitchDropsAd,#raidReleaseAd,.dropsPopHeader,.viewDrops,
+.dropCard
 {
     background-color:transparent !important;
 }
@@ -82,7 +88,7 @@ select
     border:none!important;
 }
 
-.button,.dropsSliderBtn,#genericPop
+.button,.frvr-button,#genericPop,.dropsSliderBtn
 { 
     border:none !important;
     background-color:transparent !important;
@@ -103,9 +109,10 @@ select
     box-shadow: none;
 }
 
-/*LoadingScreen*/
 
-#loadEditrBtn,#loadInfoLHolder,#loadGamNm,.lC-cube,.lds-ring
+/*loading Screen*/
+
+#loadEditrBtn,#loadEditrBtn,#loadInfoLHolder,#loadGamNm,.lC-cube,.lds-ring
 {
     display:none;
 }
@@ -131,7 +138,7 @@ select
 #initLoader
 {
     background-color:transparent;
-    background:url("https://raw.githubusercontent.com/The1der4/Default-plus/main/LoadingScreen.jpg") no-repeat center center fixed; 
+    background:url("https://github.com/The1der4/Default-plus/blob/main/illust_98032318_20220502_234605.jpg?raw=true") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -140,17 +147,17 @@ select
 
 /*Profile*/
 
-.pSt,.setHedS,.setHed,#profilePicM,.folPfp,.smlInput
-/*.button.buttonO.lgn,#crtrEmail*/
+.xpBar,.clsStatImg,.clsStatXPBar,.clsStatCard,.updDisN,
+.subPassChg,#referralHeader,.accountInput,.smlInput
 {
     background-color:transparent !important;
-    border:none;
 }
 
-.xpBar,.clsStatImg,.clsStatXPBar,.clsStatCard,.updDisN,
-.subPassChg,#referralHeader,.accountInput
+.pSt,.button.buttonO.lgn,#crtrCode,#crtrEmail,
+.setHedS,.folPfp,#profilePicM,.setHed
 {
     background-color:transparent !important;
+    border:none !important;
 }
 
 .xpBarB
@@ -158,17 +165,21 @@ select
     background-image:none !important;
 }
 
-.material-icons,.menuLink{
+.material-icons,.menuLink
+{
     color:var(--color1) !important;
 }
 
-.settName,.settNameSmall {
+.settName,.settNameSmall
+{
     border-bottom:none;
 }
 
-.pfpAction{
+.pfpAction
+{
     background:transparent;
 }
+
 
 /*Shop*/
 
@@ -179,36 +190,27 @@ select
 }
 
 #spinButton,#spinInfo,#spinKR,.bigMenTabs,
-.redVouchBtn,.purchKRInfoH,.spinVal,.creatorCodeBtn,.shopSale
-/*#creatorCodeI*/
+.redVouchBtn,.purchKRInfoH,.spinVal,#creatorCodeI,
+.creatorCodeBtn,.shopSale
 {
     background-color:transparent !important;
 }
 
-.crftRcpeCrd,.craftRcIcn,.crftTim,.bundleCrd,.bundleItmBtn,#shopJnkDsp
+#shopMainSellB,#shopSideSellB,.bundleSliderBtn,.craftRcIcn
 {
     background:transparent !important;
+    border:none;
 }
 
-.bundleIcn
+.shopCard,.bundleIcn
 {
+    background:transparent !important;
     background-image:none !important;
-    background:transparent;
 }
 
-#shopMainSellB,#shopSideSellB,.bundleSliderBtn,.shopCard
+.crftRcpeCrd,.crftTim,.bundleCrd,.bundleItmBtn,#shopJnkDsp
 {
-    border:none !important;
     background:transparent !important;
-}
-
-.bundleItmNm{
-    font-size:0px;
-}
-
-.bundleItmNm::after{
-    font-size:25px;
-    content:"Discord Nitro Are Better";
 }
 
 /*Challenge*/
@@ -223,13 +225,15 @@ select
     background-image:none !important;
 }
 
-.chalCard,.chalRews,.challCrdMsg,.chalXPBar
+.chalRews,.challCrdMsg,.chalXPBar
 {
     background-color:transparent !important;
 }
 
 .chalCard{
-    box-shadow:none !important;
+    background-color:transparent !important;
+    background:transparent !important;
+    border:none;
 }
 
 /*Esport*/
@@ -259,7 +263,7 @@ select
     background-color:transparent !important;
 }
 
-.biMFeatInfH,#bigMFeatDesc
+.biMFeatInfH,#bigMFeatDesc::-webkit-scrollbar
 {
     display:none;
 }
@@ -282,7 +286,7 @@ select
 
 /*Setting*/
 
-.setSugBox2,.setBodH,.setHed,.settingsHeader,
+.setSugBox2,.setBodH,.settingsHeader,
 .settingTab,.settingsBtn,.advancedSlider::after,
 .advancedSlider::before,.advancedSlider,#settSearch,
 span.slider::before,span.slider::after,.settingsBtn *,
@@ -299,6 +303,7 @@ span.slider::before,span.slider::after,.settingsBtn *,
 {
     display:none;
 }
+
 
 /*Host Game*/
 
@@ -318,21 +323,21 @@ span.slider::before,span.slider::after,.settingsBtn *,
     background-image:none;
 }
 
-.serverHostOpH,#playerCnt,#editorCnt,#socialCnt
+.serverHostOpH
 {
     display:none;
 }
 
 /*Customize*/
 
-.selectorItem,.loadoutBtn,.classCard,
+.selectorItem,#menuWindow.dark,.loadoutBtn,.classCard,
 .noBtnCard.blackShad,.winClose,.custBack,#itemSearchH,
 #itemSearch,#streakSel0_4,#streakSel1_1,#streakSel1_6,
 #streakSel2_0,#streakSel2_5,.streakActionOvrl,
 .streakCard.blackShad,.winSelH,.skinCard.blackShad,
 #selectorContainer,.skinCard,#loadoutName,#loadoutSelect,
 .inputGrey2,.custContainer,.custSubContainer,.clsXPBarC,
-.classXPBar,.custClear
+.classXPBar
 {
     background-color:transparent !important;
 }
@@ -460,7 +465,7 @@ span.slider::before,span.slider::after,.settingsBtn *,
     background-color:transparent !important;
 }
 
-/*TopLeft*/
+/*Timer / FPS / Ping / MapDetail*/
 
 #pingIcon,#timerIcon,#curGameInfo
 {
@@ -525,6 +530,10 @@ td>.newLeaderItem
     min-width: 200px;
 }
 
+th{
+    border-bottom: none;
+}
+
 /*Kill Feed*/
 
 .kfItem
@@ -538,9 +547,14 @@ td>.newLeaderItem
     top:450px;
 }
 
-/*KD Streak*/
+/*KD&Streak*/
 
-#streakCount,.countIcon
+#streakCount,
+.countIcon,
+#killsIcon,
+#deathsIcon,
+#streakIcon,
+#kdIcon
 {
     background-color:transparent;
 }
@@ -589,30 +603,28 @@ td>.newLeaderItem
     color:var(--color2);
 }
 
-/*Krank/StreakItem*/
+/*Krank Text / Streak Item*/
 
 .killStreakCnt,#killStreakHolder,.killStreakItem
 {
     background-color:none !important;
 }
 
-/*Teamscore*/
+/*Team score*/
 
 #teamScores
 {
     background-color:transparent;
 }
 
-/*Killcard*/
-
+/*killcard*/
 
 .death-ui-bottom,.death-ui-bottom-empty
 {
     background:transparent;
-    /*backdrop-filter:none;*/
+    backdrop-filter:none;
     animation:none;
 }
-
 
 .death-row-weapon-text,.death-row-bottom-bg,.death-row-class,
 .death-row-right,.death-row-left,.death-row-center,.death-row-bottom,.death-column{
@@ -727,9 +739,9 @@ td>.newLeaderItem
     color:var(--color2) !important;
 }
 
-#networkLag,.reportDC
+#networkLag
 {
-    background-color:transparent !important;
+    background-color:transparent;
 }
 
 #instructionsUpdate{
@@ -775,7 +787,7 @@ td>.newLeaderItem
     background:none !important;
 }
 
-/*FreePrize/Bundle*/
+/*Free Prize & Bundle*/
 
 .genericPromptBackground,.genericPromptSubTitle,.bundlCreatorText,
 .bundlPopImg,#acpImg
@@ -795,19 +807,17 @@ td>.newLeaderItem
 }
 
 .bundlPopNam,.bundlPopInfo{
-    font-size:0px;
+    font-size:0px
 }
 
-.bundlPopNam::after
-{
-    content:"Get Real";
-    font-size:36px;
+.bundlPopNam::after{
+    content:"You are too broke";
+    font-size:36px
 }
 
-.bundlPopInfo::after
-{
-    content:"You don't have money";
-    font-size:28px;
+.bundlPopInfo::after{
+    content:"You can't effort this";
+    font-size:28px
 }
 
 .genericprompt,.prompt-content
@@ -816,16 +826,15 @@ td>.newLeaderItem
     box-shadow:none !important;
 }
 
-/*Parkour*/
+/*parkour*/
 
-#speedRunBox,.sriAct,#speedRunReset
-{
+#speedRunBox,.sriAct,#speedRunReset{
     background-color: transparent;
 }
 
-/*Trade*/
+/*trade*/
 
-#tradeChatInput,.tListN.inv,.tSearch,
+#menuWindow.dark,#tradeChatInput,.tListN.inv,.tSearch,
 #tHeader0,#tHeader1,.tSubCheck,.tDecCheck
 {
     background-color:transparent !important;
