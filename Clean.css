@@ -3,7 +3,7 @@
 @name               Default+ css
 @discord            https://discord.gg/eCCkKnEsDK
 @author             1der4#1716
-@version            1.11.4
+@version            1.11.5
 @authorize client   RAYS
 @note1              join discord to report bugs, give suggestions and get css update
 @note2              DO NOT STEAL CODE, AND CLAIM THIS CSS IS WRITTEN BY YOU.
@@ -238,27 +238,31 @@ select
 
 /*Esport*/
 
-.scrimDesc{
+.scrimDesc
+{
     font-size:0px;
 }
 
-.scrimLink{
+.scrimLink
+{
     font-size:13px;
 }
 
-.scrimImage{
+.scrimImage
+{
     background:transparent !important;
     box-shadow:none;
 }
 
-.scrimSub{
+.scrimSub
+{
     display:none;
 }
 
 /*Map*/
 
 .bigMFeatHold,.biMFeatInfB,.mapListItem,.mapsVotes,
-#bigMFeatHBtn,#bigMFeatPBtn,#mapAgeD
+#bigMFeatHBtn,#bigMFeatPBtn
 {
     background-color:transparent !important;
 }
@@ -286,11 +290,16 @@ select
 
 /*Setting*/
 
-.setSugBox2,.setBodH,.settingsHeader,
-.settingTab,.settingsBtn,.advancedSlider::after,
-.advancedSlider::before,.advancedSlider,#settSearch,
-span.slider::before,span.slider::after,.settingsBtn *,
-#slid_input_lagComp
+.setSugBox2,.material-icons.plusOrMinus
+{
+    display:none;
+}
+
+.setBodH,.settingsHeader,.settingTab,.settingsBtn,
+.advancedSlider::after,.advancedSlider::before,
+.advancedSlider,#settSearch,
+span.slider::before,span.slider::after,
+.settingsBtn *,#slid_input_lagComp
 {
     background-color:transparent !important;
 }
@@ -298,12 +307,6 @@ span.slider::before,span.slider::after,.settingsBtn *,
 .settingTab:hover {
     border-bottom: none;
 }
-
-.setSugBox2,.material-icons.plusOrMinus
-{
-    display:none;
-}
-
 
 /*Host Game*/
 
@@ -330,14 +333,11 @@ span.slider::before,span.slider::after,.settingsBtn *,
 
 /*Customize*/
 
-.selectorItem,#menuWindow.dark,.loadoutBtn,.classCard,
+#menuWindow.dark,.loadoutBtn,.classCard,
 .noBtnCard.blackShad,.winClose,.custBack,#itemSearchH,
-#itemSearch,#streakSel0_4,#streakSel1_1,#streakSel1_6,
-#streakSel2_0,#streakSel2_5,.streakActionOvrl,
-.streakCard.blackShad,.winSelH,.skinCard.blackShad,
+#itemSearch,.streakActionOvrl,.winSelH,.skinCard.blackShad,
 #selectorContainer,.skinCard,#loadoutName,#loadoutSelect,
-.inputGrey2,.custContainer,.custSubContainer,.clsXPBarC,
-.classXPBar
+.inputGrey2,.clsXPBarC,.classXPBar
 {
     background-color:transparent !important;
 }
@@ -347,50 +347,37 @@ span.slider::before,span.slider::after,.settingsBtn *,
     opacity:0;
 }
 
-.custContainer,.custSubContainer,.selectorItem
+.custContainer,.custSubContainer,.streakCard,
+.selectorItem
 {
+    background-color:transparent !important;
     border:none !important;
-}
-
-.clsXPBarC{
-    color:transparent !important;
 }
 
 /*Spectate*/
 
-#specTimer,#specStats,#specContr,#specNames,
-#specScoreTm0,#specScoreTm1
+#uiBase.onSpect #topRight,
+.sliderSml::before,#specNameTm0,#specNameTm1,#specGameInfo
+{
+    display:none !important;
+}
+
+#plySearch,.punishButton,.spectPIcon,.specLevelBox,
+#spectHPBI,#spectHPB,#specMapOverlay,#specTimer,
+#specStats,#specNames,#specScoreTm0,#specScoreTm1
+{
+    background-color:transparent !important;
+}
+
+#specContr
 {
     background-color:transparent;
     border:none;
 }
 
-.sliderSml::before,#specNameTm0,#specNameTm1,#specGameInfo
-{
-    display:none;
-}
-
-#specMapOverlay
-{
-    left:20px;
-    top:140px;
-    background-color:transparent;
-    visibility:visible !important;
-}
-
-#plySearch,.punishButton,.spectPIcon,.specLevelBox,
-#spectHPBI,#spectHPB
-{
-    background-color:transparent !important;
-}
-
 .sliderSml{
     width: 40px;
     height: 20px;
-}
-
-#uiBase.onSpect #topRight{
-    display:none !important;
 }
 
 #specScoreTm0,#specScoreTm1,#specTimer {
@@ -530,10 +517,6 @@ td>.newLeaderItem
     min-width: 200px;
 }
 
-th{
-    border-bottom: none;
-}
-
 /*Kill Feed*/
 
 .kfItem
@@ -638,7 +621,6 @@ th{
 }
 
 .death-stats {
-    position:flexed;
     justify-content: end;
     row-gap:10px;
     right: 5%;
