@@ -29,6 +29,7 @@
 {
     --color1:pink;
     --color2:white;
+    --ffa5a5:#ffa5a5;
 }
 
 * , a , td , th
@@ -41,6 +42,7 @@
         1px 0px black,
         0px 1px black;
     color:var(--color1) !important;
+    animation:none !important;
 }
 
 div
@@ -53,7 +55,7 @@ th
     border-bottom: none;
 }
 
-select
+select,canvas
 {
     background-color:transparent !important;
 }
@@ -308,6 +310,11 @@ span.slider::before,span.slider::after,
     border-bottom: none;
 }
 
+.sliderVal {
+    border: none;
+    background-color:transparent;
+}
+
 /*Host Game*/
 
 .hostHeader,.hostToggle,#stickyHostH,#mpSrch
@@ -364,7 +371,8 @@ span.slider::before,span.slider::after,
 
 #plySearch,.punishButton,.spectPIcon,.specLevelBox,
 #spectHPBI,#spectHPB,#specMapOverlay,#specTimer,
-#specStats,#specNames,#specScoreTm0,#specScoreTm1
+#specStats,#specNames,#specScoreTm0,#specScoreTm1,
+#specMapCanvas
 {
     background-color:transparent !important;
 }
@@ -490,6 +498,7 @@ span.slider::before,span.slider::after,
 {
     content:"1der4";
     font-size:15px;
+    color:var(--ffa5a5);
 }
 
 #newLeaderDisplay
