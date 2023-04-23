@@ -311,8 +311,17 @@ span.slider::before,span.slider::after,
 }
 
 .sliderVal {
-    border: none;
+    border: none !important;
     background-color:transparent;
+}
+
+input:checked+.slider,.sliderM::-webkit-slider-thumb {
+    background-color: var(--color1)
+}
+
+.openCollection {
+    background-color:transparent!important;
+    color:var(--color1) !important;
 }
 
 /*Host Game*/
@@ -438,14 +447,17 @@ span.slider::before,span.slider::after,
     display:none;
 }
 
-#healthValueHolder
-{
-    background-color:transparent;
+#healthValueHolder {
+    position: fixed;
+    background-color: transparent;
+    padding: 0;
 }
 
-#healthValue
-{
-    font-size:35px;
+#healthValue {
+    position: fixed;
+    font-size: 40px !important;
+    right: 1200px;
+    top: 800px;
 }
 
 /*Ammo*/
@@ -455,9 +467,17 @@ span.slider::before,span.slider::after,
     display:none !important;
 }
 
-#ammoDisplay
-{
-    background-color:transparent !important;
+#ammoDisplay {
+    position: fixed;
+    background-color: transparent;
+    transform: none;
+}
+
+#ammoVal {
+   position: fixed;
+   font-size: 40px !important;
+   right:820px;
+   top:800px;
 }
 
 /*Timer / FPS / Ping / MapDetail*/
@@ -487,6 +507,12 @@ span.slider::before,span.slider::after,
     content:' ms';
 }
 
+#gameMessage{
+    position:fixed;
+    top:1200px;
+    right:900px;
+}
+
 /*Leaderboard*/
 
 .newLeaderNameM,.newLeaderNameM::before,.newLeaderNameM span
@@ -497,7 +523,7 @@ span.slider::before,span.slider::after,
 .newLeaderNameM::after
 {
     content:"1der4";
-    font-size:15px;
+    font-size:13px;
     color:var(--ffa5a5);
 }
 
@@ -508,6 +534,12 @@ span.slider::before,span.slider::after,
     right:20px;
     transform: unset;
     display:block !important;
+    font-size:13px !important;
+}
+
+.newLeaderItem {
+    display: flex;
+    font-size:13px !important;
 }
 
 .newLeaderContainer,.newLeaderTeam,#leaderDisplay
@@ -522,9 +554,15 @@ span.slider::before,span.slider::after,
 
 td>.newLeaderItem
 {
-    max-width: 300px;
-    min-width: 200px;
+    max-width: 220px;
+    min-width: 100px;
 }
+    
+#ingameTable td,#ingameTable th
+{
+    font-size:14px !important;
+}
+
 
 /*Kill Feed*/
 
@@ -553,7 +591,8 @@ td>.newLeaderItem
 
 #topRight
 {
-    top:400px;
+    top:1000px;
+    right:850px;
     padding: 0;
     margin: 0;
     width:auto;
@@ -599,7 +638,7 @@ td>.newLeaderItem
 
 .killStreakCnt,#killStreakHolder,.killStreakItem
 {
-    background-color:none !important;
+    background-color:transparent !important;
 }
 
 /*Team score*/
@@ -807,7 +846,7 @@ td>.newLeaderItem
 }
 
 .bundlPopInfo::after{
-    content:"You can't effort this";
+    content:"You can't afford this";
     font-size:28px
 }
 
