@@ -1,0 +1,56 @@
+*{
+    text-shadow:1px 1px 1px black;
+}
+
+#frvrFTUEVideoHolder,
+#mainLogo,
+#mainLogoFace,
+#seasonLabel,
+#aHolder,
+#termsInfo,
+#streamContainer,
+#editorBtnM,
+#headerRightSocial,
+#newUserGuide,
+.menBtnIcn,
+::-webkit-scrollbar{
+    display:none!important;
+}
+
+/*ad*/
+#homeStoreAd,
+#updateAd,
+#freeKRAd,
+#doubleXPAd,
+#doubleClassXPAd,
+.adIcon,
+.adIconL
+{
+    display:none!important;
+}
+
+div,img,input,tr,table{
+    background:transparent !important;
+    border:none !important;
+    box-shadow:none !important;
+}
+
+.button, #policeButton{
+    border:none !important;
+}
+
+/*setting*/
+
+.setSugBox2,.slidecontainer{
+    display:none !important;
+}
+
+/*ingame*/
+
+
+
+/*endtable*/
+
+.endAHolder{
+    display:none !important;
+}
